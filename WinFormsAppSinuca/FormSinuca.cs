@@ -249,6 +249,11 @@ namespace WinFormsAppSinuca
 			competidor.Pontos += (int)numCampTimePontos.Value;
 
 			CarregarCampeonatoTabelas(tabela);
+
+			if(tabela.Vencedor!=null)
+			{
+				MessageBox.Show("Time " + tabela.Vencedor.Time.Nome + " venceu!");
+			}
 		}
 		/// Campeonato
 	}
